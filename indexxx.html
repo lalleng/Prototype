@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <header class="responsive"> 
+        <h2>L.A. Portfolio</h2>
+      </header>
+    <link rel="stylesheet" href="mystyle.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA Portfolio</title> 
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+</head>
+ 
+<body>
+
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/lga_creations/" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
+        <p>Check me out on social media!</p>
+    </footer>   
+  
+    <div class="sidebar">
+        <a class="active" href="#home">Home</a>
+        <a href="#About Me">About Me</a>
+        
+      </div>
+      <div class="content">
+        ..
+    </div>  
+    <div class="row">
+        <div class="column" style="background-color:rgb(255, 255, 255);">
+          <h2>Welcome to my portfolio page!</h2>
+          <p>Here you will see projects I have completed over the past couple of years.</p>
+        </div>
+        <div class="column" style="background-color:rgb(134, 134, 134);">
+          <img src="Beast Mode.jpg" id="beast"beast alt="Picture of a red beast with a weight in it's mouth" class="responsive"> 
+          <p>This is an old avatar I made for my graphic design Instagram account.</p>
+        </div>
+      </div> 
+      
+      
+
+      <div class="tab">
+        <button class="tablinks" onmouseover="openCity(event, 'Piece#1')">Piece#1</button>
+        <button class="tablinks" onmouseover="openCity(event, 'Piece#2')">Piece#2</button>
+        <button class="tablinks" onmouseover="openCity(event, 'Piece#3')">Piece#3</button>
+        <button class="tablinks" onmouseover="openCity(event, 'Piece#4')">Piece#4</button>
+        <button class="tablinks" onmouseover="openCity(event, 'Piece#5')">Piece#5</button>
+        <button class="tablinks" onmouseover="openCity(event, 'Piece#6')">Piece#6</button>
+      </div>
+
+      <div id="Piece#1" class="tabcontent">
+        <h3>Piece#1</h3>
+        <p>For this project I had to recreate a poster from the 80s or earlier. The image below was my inspiration for the poster.</p>
+        <img src="Allen-Pjt4.png" alt="Modern BMW car poster" class="responsive"> 
+        <img src="BMW ad.jpg" alt="1980 BMW car poster" class="responsive"> 
+
+      </div>
+      
+      <div id="Piece#2" class="tabcontent">
+        <h3>Piece#2</h3>
+        <p>For this project I got to create a map of a city using Adobe InDesign and Illustarator.</p>
+        <img src="Allen_Final.jpg" alt="Map of Star NC created in InDesign and Illustrator" class="responsive"> 
+
+      </div>
+      
+      <div id="Piece#3" class="tabcontent">
+        <h3>Piece#3</h3>
+        <p>For this project I had to create a lable for a drink. </p>
+        <img src="Allen-Pjt5-Final.png" alt="A beverage lable design called TKO Hard Cider" class="responsive"> 
+        <img src="new punch.jpg" alt="A beverage lable design called TKO Hard Cider exhibited on a bottle" class="responsive"> 
+
+       
+      </div>    
+
+      <div id="Piece#4" class="tabcontent">
+        <h3>Piece#4</h3>
+        <p>For this project I designed a full-page magazine print for Baldwin Pianos along with an Instagram ad.</p>
+        <img src="Full-page Magazine Print .png" alt="A full-page magazine print for Baldwin pianos" class="responsive"> 
+        <img src="Instagram Ad.png" alt="An Instagram ad for Baldwin pianos" class="responsive"> 
+      </div>
+
+
+      <div id="Piece#5" class="tabcontent">
+        <h3>Piece#5</h3>
+        <p>For this project I got to create a sifi fictional poster. Here are two posters I created.</p>
+        <img src="alienPoster5.jpg" alt="A poster of aliens" class="responsive"> 
+        <img src="alienPoster8.jpg" alt="A poster of aliens" class="responsive"> 
+      </div>
+
+      <div id="Piece#6" class="tabcontent">
+        <h3>Piece#6</h3>
+        <p>For this project I had to create a self promotional card.</p>
+        <img src="Allen-SelfPromo.jpg" alt="A photo of art supplies edited in Photoshop with the words Logan Allen Devine Designs on it" class="responsive"> 
+
+      </div> 
+
+       
+
+
+    
+</body>
+</html>
